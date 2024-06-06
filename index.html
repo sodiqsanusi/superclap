@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SuperClap for Medium</title>
   <meta name="author" content="Sodiq 'Ade' Sanusi">
   <meta name="descrition" content="Landing page of the Superclap browser extension">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
   <header>
-    <div>
-      <a href="/">
-        <div><img src="./images/icon.png" alt="The superclap icon"></div>
+    <div class="headerLayout">
+      <a href="/" class="headerImgLink">
+        <div class="headerImgContainer"><img src="./images/icon.png" alt="The superclap icon"></div>
       </a>
-      <nav>
+      <nav class="navLayout">
         <a href="#features">Features</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
@@ -22,47 +28,64 @@
     </div>
   </header>
   <main>
-    <div>
-      <div><img src="./images/cover-image.jpg" alt="An image of superclap being used on a medium article"></div>
+    <div class="mainLayout">
+      <div class="mainImgContainer">
+        <img src="./images/cover-image.jpg" alt="An image of superclap being used on a medium article">
+      </div>
       <h1>Superclap for Medium</h1>
-      <p>Enhancing Engagement with a Single Click</p>
+      <p>Enhancing Articles Engagement with a Single Click</p>
       <button>Try Superclap Now</button>
     </div>
   </main>
   <section id="features">
-    <div>
-      <article>
-        <div><img src="./images/feature1.jpg" alt="Single-Click buttons from Superclap on every Medium article"></div>
+    <div class="featuresLayout">
+      <article class="feature">
+        <div class="featureImgContainer">
+          <img src="./images/feature1.jpg" alt="Single-Click buttons from Superclap on every Medium article">
+        </div>
         <h2>Easy Clapping</h2>
         <p>Automate your claps with a single click, making it easier and faster to show appreciation.</p>
       </article>
-      <article>
-        <div></div>
-        <h2></h2>
-        <p></p>
+      <article class="feature">
+        <div class="featureImgContainer">
+          <img src="./images/feature2.jpg" alt="The extension's interface for customizing amount of claps per button">
+        </div>
+        <h2>User-Friendly Interface</h2>
+        <p>Intuitive and clean design that seamlessly integrates with Medium.</p>
       </article>
     </div>
   </section>
   <section id="about">
-    <div>
-      <p></p>
+    <div class="aboutText">
+      <p>SuperClap was inspired by the tedious process of clapping multiple times on Medium articles.
+        As a frequent reader, I wanted a way to simplify this process and enhance user engagement.
+      </p>
     </div>
-    <div>
-
+    <div class="ytVideoContainer">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/vMiIP9rBMK8?si=l3MiV2GPLni2mGTw"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
     </div>
   </section>
   <footer id="contact">
-    <h2></h2>
-    <div>
-      <div></div>
-      <h3></h3>
-      <p></p>
-    </div>
-    <div>
-      <div></div>
-      <h3></h3>
-      <p></p>
+    <div class="footerLayout">
+      <h2>Built By:</h2>
+      <div class="personInfo">
+        <div class="avatarImgContainer"><img src="./images/avatar_ade.svg" alt="Avatar for Sodiq 'Ade' Sanusi"></div>
+        <h3>Sodiq "Ade" Sanusi</h3>
+        <p>Project Lead and Software Engineer</p>
+        <a href="https://github.com/sodiqsanusi/">GitHub</a>
+      </div>
+      <div class="personInfo">
+        <div class="avatarImgContainer"><img src="./images/avatar_ay.svg" alt="Avatar for Mide Oladele"></div>
+        <h3>Ayomide Oladele</h3>
+        <p>Interface Designer</p>
+        <a href="https://mideoladele.webflow.io/">Website</a>
+      </div>
     </div>
   </footer>
 </body>
+
 </html>

@@ -1,0 +1,118 @@
+/*
+  Josh's Custom CSS Reset (I love his reset)
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  object-fit: cover;
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/* End of CSS Reset */
+
+header {
+  padding: 2em .5em;
+  border-bottom: 1px solid #242424;
+}
+
+.headerLayout {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerImgLink {
+  text-decoration: none;
+  width: 40%;
+  max-width: 200px;
+  transform: translateY(2px);
+}
+
+.navLayout {
+  width: 55%;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLayout a {
+  color: #6b6b6b;
+  font-weight: 500;
+  font-size: .9rem;
+}
+
+.navLayout a:hover, .navLayout a:focus {
+  color: #242424;
+}
+
+/* ------------------------------------- */
+
+main {
+  padding: 2em 1em;
+  border-bottom: 1px solid #242424;
+}
+
+.mainLayout {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.mainImgContainer {
+  width: 100%;
+  border: 6px solid #242424;
+  border-radius: 6px;
+}
+
+.mainLayout h1 {
+  margin: .3em 0 0;
+}
+
+.mainLayout button {
+  margin-top: 1em;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #0f730c;
+  color: #ffffff;
+  width: 100%;
+  max-width: 300px;
+  padding: 1em 0;
+  border-radius: 30px;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.mainLayout button:hover, .mainLayout button:focus {
+  background-color: #0a6007;
+  transform: scale(.99);
+}
