@@ -74,7 +74,7 @@ header {
 
 main {
   padding: 2em 1em;
-  border-bottom: 1px solid #242424;
+  background-color: #f2f2f2;
 }
 
 .mainLayout {
@@ -115,4 +115,48 @@ main {
 .mainLayout button:hover, .mainLayout button:focus {
   background-color: #0a6007;
   transform: scale(.99);
+}
+
+/* ----------------------------------------- */
+
+#features {
+  padding: 2em 1em;
+  border-bottom: 1px solid #242424; 
+}
+
+.featuresLayout {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2em;
+}
+
+.feature {
+  padding: 1.5rem 1rem;
+  width: 90%;
+  max-width: 400px;
+  border: 1px solid #e6e6e6;
+}
+
+.featureImgContainer {
+  width: 90%;
+  margin: 0 auto 1em;
+}
+
+.featureText {
+  padding: 0 .5em;
+}
+
+.featureText h2 {
+  font-size: 1.2rem;
+  margin-bottom: .25em;
+  color: #292929;
+}
+
+.featureText p {
+  font-size: .85rem;
+  color: #757575;
 }
