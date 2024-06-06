@@ -57,6 +57,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .navLayout a {
@@ -218,6 +219,14 @@ main {
   margin-bottom: 1.5em;
 }
 
+.personInfoLayout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .personInfo {
   width: 100%;
   max-width: 400px;
@@ -255,8 +264,55 @@ main {
   border-radius: 64px;
   color: #bdbdbd;
   font-size: .9rem;
+  border: 1px solid transparent;
 }
 .personInfoText a:hover, .personInfoText a:focus {
-  transform: scale(.98);
   background-color: #1b1b1b;
+  border-color: #e6e6e6;
+}
+
+/* --------------------------------------------
+* Responsive Styling for Large Screen Devices
+* --------------------------------------------- */
+
+@media (min-width: 800px) {
+  main {
+    padding: 3em 1em;
+  }
+
+  .mainImgContainer {
+    width: 80%;
+    margin-bottom: 1em;
+  }
+
+  #features {
+    padding: 5em 1em;
+  }
+
+  .featuresLayout {
+    flex-direction: row;
+    column-gap: 2em;
+    justify-content: center;
+  }
+
+  .feature {
+    width: 40%;
+    min-height: 400px;
+  }
+
+  .featureImgContainer {
+    height: 280px;
+  }
+  .featureText {
+    height: 90px;
+  }
+
+  #about {
+    padding: 3em 1em;
+  }
+
+  .personInfoLayout {
+    padding: 3em 0;
+    flex-direction: row;
+  }
 }
