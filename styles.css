@@ -160,3 +160,35 @@ main {
   font-size: .85rem;
   color: #757575;
 }
+
+/* ------------------------- */
+
+#about {
+  padding: 2em 1em;
+  background-color: #000;
+  color: #fff;
+}
+
+.aboutLayout {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutText {
+  margin: .5em 0 4em;
+}
+
+.ytVideoContainer {
+  width: 100%;
+}
+
+.ytVideoContainer iframe {
+  object-fit: cover;
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
