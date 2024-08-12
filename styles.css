@@ -63,7 +63,7 @@ header {
 .navLayout a {
   color: #6b6b6b;
   font-weight: 500;
-  font-size: min(80%, .9rem);
+  font-size: min(3vw, .9rem);
 }
 
 .navLayout a:hover, .navLayout a:focus {
