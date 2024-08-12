@@ -63,7 +63,7 @@ header {
 .navLayout a {
   color: #6b6b6b;
   font-weight: 500;
-  font-size: .9rem;
+  font-size: min(80%, .9rem);
 }
 
 .navLayout a:hover, .navLayout a:focus {
@@ -97,11 +97,8 @@ main {
   margin: .3em 0 0;
 }
 
-.mainLayout button {
+.getExtension {
   margin-top: 1em;
-  cursor: pointer;
-  outline: none;
-  border: none;
   background-color: #0f730c;
   color: #ffffff;
   width: 100%;
@@ -110,9 +107,10 @@ main {
   border-radius: 30px;
   font-weight: 700;
   margin-bottom: 1em;
+  text-decoration: none;
 }
 
-.mainLayout button:hover, .mainLayout button:focus {
+.getExtension:hover, .getExtension:focus {
   background-color: #0a6007;
   transform: scale(.99);
 }
